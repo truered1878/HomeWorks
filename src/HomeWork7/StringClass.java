@@ -3,6 +3,7 @@ package HomeWork7;
 import java.util.Random;
 import java.util.Scanner;
 
+
 public class StringClass {
 
     void findSymbolOccurance() {
