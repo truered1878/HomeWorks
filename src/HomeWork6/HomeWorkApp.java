@@ -39,7 +39,7 @@ public class HomeWorkApp {
             System.out.println("Red");
         } else if (0 < value && value <= 100) {
             System.out.println("Yellow");
-        } else if (value > 100) {
+        } else {
             System.out.println("Green");
         }
     }
@@ -59,11 +59,7 @@ public class HomeWorkApp {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int sum = a + b;
-        if (sum >= 10 && sum <= 20) {
-            return true;
-        } else {
-            return false;
-        }
+        return (sum >= 10 && sum <= 20);
     }
 
     void positiveNegative(int number) {
@@ -75,11 +71,7 @@ public class HomeWorkApp {
     }
 
     boolean trueFalse (int number) {
-        if (number < 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return number < 0;
     }
 
     void printOut (String print, int i) {
@@ -89,10 +81,6 @@ public class HomeWorkApp {
     }
 
     boolean year(int year) {
-        if ((year%4 == 0 && year%100 != 0) || (year%400 == 0)) {
-            return true;
-        } else {
-            return false;
-        }
+        return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
 }
